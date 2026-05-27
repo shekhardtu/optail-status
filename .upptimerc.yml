@@ -23,11 +23,12 @@ sites:
       - 200
 
 status-website:
-  # Until status.optail.io CNAME is configured, the page lives at
-  # https://shekhardtu.github.io/optail-status. Swap `baseUrl` for `cname`
-  # when DNS is ready: see docs/operations/uptime.md → "Custom domain".
-  baseUrl: /optail-status
-  # cname: status.optail.io
+  # Custom domain — status.optail.io. Requires a CNAME record in optail.io's
+  # DNS zone pointing at `shekhardtu.github.io`. Upptime writes a CNAME file
+  # to the gh-pages branch during build, which GitHub Pages reads to bind
+  # the custom domain. SSL provisions automatically within ~10 min once
+  # DNS resolves.
+  cname: status.optail.io
   logoUrl: https://raw.githubusercontent.com/shekhardtu/optail/main/packages/shared/src/brand/optail-mark.svg
   name: Optail Status
   introTitle: "**Optail** is the open-source provider-failover-first transactional email platform."
