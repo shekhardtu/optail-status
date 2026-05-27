@@ -6,11 +6,11 @@ Probed every 5 minutes by GitHub Actions. Status page auto-generated at https://
 
 ## What's monitored
 
-| Endpoint | What it covers |
-|---|---|
-| `https://api.optail.io/health` | The REST API customers hit |
-| `https://app.optail.io/` | The dashboard SPA |
-| `https://optail.io/` | The landing + docs site |
+| Endpoint                            | What it covers                                                |
+| ----------------------------------- | ------------------------------------------------------------- |
+| `https://api.optail.io/health`      | The REST API customers hit                                    |
+| `https://app.optail.io/`            | The dashboard SPA                                             |
+| `https://optail.io/`                | The landing + docs site                                       |
 | `https://webhooks.optail.io/health` | The provider webhook ingester (SendGrid/Postmark/Mailgun/SES) |
 
 Edit `.upptimerc.yml` and open a PR to add or change monitors.
