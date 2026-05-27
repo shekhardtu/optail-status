@@ -1,31 +1,53 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+owner: shekhardtu
+repo: optail-status
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Test Broken Site
-    url: https://thissitedoesnotexist.koj.co
+  - name: Optail API
+    url: https://api.optail.io/health
+    expectedStatusCodes:
+      - 200
+    maxResponseTime: 5000
+  - name: Optail Dashboard
+    url: https://app.optail.io/
+    method: HEAD
+    expectedStatusCodes:
+      - 200
+  - name: Optail Landing + Docs
+    url: https://optail.io/
+    method: HEAD
+    expectedStatusCodes:
+      - 200
+  - name: Optail Webhook Ingester
+    url: https://webhooks.optail.io/health
+    expectedStatusCodes:
+      - 200
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  # Until status.optail.io CNAME is configured, the page lives at
+  # https://shekhardtu.github.io/optail-status. Swap `baseUrl` for `cname`
+  # when DNS is ready: see docs/operations/uptime.md → "Custom domain".
+  baseUrl: /optail-status
+  # cname: status.optail.io
+  logoUrl: https://raw.githubusercontent.com/shekhardtu/optail/main/packages/shared/src/brand/optail-mark.svg
+  name: Optail Status
+  introTitle: "**Optail** is the open-source provider-failover-first transactional email platform."
+  introMessage: Live status + 90-day uptime history for `api.optail.io`, `app.optail.io`, `optail.io`, and `webhooks.optail.io`. Failed probes open a GitHub Issue automatically; recovery auto-closes it. [Source repo](https://github.com/shekhardtu/optail).
   navbar:
     - title: Status
       href: /
     - title: GitHub
-      href: https://github.com/$OWNER/$REPO
+      href: https://github.com/shekhardtu/optail
+    - title: Site
+      href: https://optail.io
+    - title: Docs
+      href: https://optail.io/docs
 
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+# Notifications: failed probes auto-open GitHub Issues in this repo. To
+# pipe alerts to Slack/Discord/email, add the relevant webhook secrets
+# and uncomment the `notifications:` block below. See:
+#   https://upptime.js.org/docs/notifications
+#
+# notifications:
+#   - type: slack
+#     channel: incidents
+#     token: $SLACK_TOKEN
