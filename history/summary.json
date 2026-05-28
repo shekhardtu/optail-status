@@ -10,11 +10,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 203,
-    "timeDay": 203,
-    "timeWeek": 203,
-    "timeMonth": 203,
-    "timeYear": 203,
+    "time": 143,
+    "timeDay": 143,
+    "timeWeek": 143,
+    "timeMonth": 143,
+    "timeYear": 143,
     "dailyMinutesDown": {}
   },
   {
@@ -23,18 +23,19 @@
     "icon": "https://icons.duckduckgo.com/ip3/app.optail.io.ico",
     "slug": "optail-dashboard",
     "status": "down",
-    "uptime": "34.34%",
-    "uptimeDay": "34.34%",
-    "uptimeWeek": "34.34%",
-    "uptimeMonth": "34.34%",
-    "uptimeYear": "34.34%",
+    "uptime": "0.03%",
+    "uptimeDay": "0.03%",
+    "uptimeWeek": "0.03%",
+    "uptimeMonth": "0.03%",
+    "uptimeYear": "0.03%",
     "time": 0,
     "timeDay": 0,
     "timeWeek": 0,
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2026-05-27": 0
+      "2026-05-28": 62,
+      "2026-05-27": 748
     }
   },
   {
@@ -43,18 +44,19 @@
     "icon": "https://icons.duckduckgo.com/ip3/optail.io.ico",
     "slug": "optail-landing-docs",
     "status": "down",
-    "uptime": "57.98%",
-    "uptimeDay": "57.98%",
-    "uptimeWeek": "57.98%",
-    "uptimeMonth": "57.98%",
-    "uptimeYear": "57.98%",
+    "uptime": "0.03%",
+    "uptimeDay": "0.03%",
+    "uptimeWeek": "0.03%",
+    "uptimeMonth": "0.03%",
+    "uptimeYear": "0.03%",
     "time": 0,
     "timeDay": 0,
     "timeWeek": 0,
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2026-05-27": 0
+      "2026-05-28": 62,
+      "2026-05-27": 747
     }
   },
   {
@@ -68,11 +70,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 58,
-    "timeDay": 58,
-    "timeWeek": 58,
-    "timeMonth": 58,
-    "timeYear": 58,
+    "time": 62,
+    "timeDay": 62,
+    "timeWeek": 62,
+    "timeMonth": 62,
+    "timeYear": 62,
     "dailyMinutesDown": {}
   }
 ]
